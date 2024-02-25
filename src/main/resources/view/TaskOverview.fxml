@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1200.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.union.csc260.sprint.controller.TaskOverviewController">
+    <children>
+        <Label layoutX="100.0" layoutY="50.0" text="Task Details" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+        <GridPane layoutX="43.0" layoutY="87.0" prefHeight="173.0" prefWidth="393.0"
+                  AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="87.0" styleClass="background">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Task Name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <Label fx:id="nameLabel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="Task Goal" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Label fx:id="taskLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Comments" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextArea fx:id="commentsTextArea" GridPane.columnIndex="1" GridPane.rowIndex="3" wrapText="true" />
+                <Label text="Completed" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                <CheckBox fx:id="completed" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

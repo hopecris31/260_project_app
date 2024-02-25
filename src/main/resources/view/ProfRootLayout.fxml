@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="1000.0" prefWidth="1200.0" stylesheets="@Theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="edu.union.csc260.sprint.controller.ProfessorRootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu text="File">
+                <MenuItem onAction="#handleNew" text="New" />
+                <MenuItem onAction="#handleSave" text="Save" />
+                <MenuItem onAction="#showAboutWindow" text="About..." />
+                <MenuItem onAction="#handleExit" text="Exit" />
+            </Menu>
+            <Menu text="Class">
+                <MenuItem onAction="#showStudentOverview" text="Students" />
+                <MenuItem onAction="#showGroupOverview" text="Groups" />
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>

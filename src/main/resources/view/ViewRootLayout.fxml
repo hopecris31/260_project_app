@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="1000.0" prefWidth="1200.0" stylesheets="@Theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="edu.union.csc260.sprint.controller.ViewRootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu text="File">
+                <MenuItem onAction="#handleNew" text="New" />
+                <MenuItem onAction="#handleSave" text="Save" />
+                <MenuItem onAction="#showAboutWindow" text="About..." />
+                <MenuItem onAction="#handleExit" text="Exit" />
+            </Menu>
+            <Menu text="Project Backlog">
+                <MenuItem onAction="#showViewBacklogOverview" text="View Backlog" />
+            </Menu>
+            <Menu text="Sprints">
+                <MenuItem onAction="#showViewSprintOverview" text="View Sprints" />
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>
